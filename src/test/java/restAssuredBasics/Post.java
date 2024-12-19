@@ -26,7 +26,7 @@ public class Post {
         RestAssured.
                 given()
                     .baseUri("https://restful-booker.herokuapp.com")
-                    .basePath("/auth")
+                   .basePath("/auth")
                     .contentType(ContentType.JSON)
                     .body(payload)
                     .log().all()
